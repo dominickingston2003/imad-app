@@ -1,6 +1,5 @@
 console.log('Loaded!');
-var commentInput =document.getElementById('comment')
-var name = commentInput.value;
+
 var submit = document.getElementById('submit_btn')
 submit.onclick = function() {
   var request = new XMLHttpRequest();
@@ -18,6 +17,8 @@ submit.onclick = function() {
           }
       }
   }
+  var commentInput =document.getElementById('comment')
+  var name = commentInput.value;
   request.open('GET','http;//http://dominickingston2003.imad.hasura-app.io/submit-name?name=' + name,true);
   request.send(null);
 };
