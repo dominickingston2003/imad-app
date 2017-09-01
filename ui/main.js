@@ -12,13 +12,13 @@ submit.onclick = function() {
               for(var i=0;i<name.length;i++){
                   list += '<li>' + name[i] + '</li>';
               }
-              var ul = document.getElementById('show')
+              var ul = document.getElementById('namelist')
               ul.innerHTML = list;
           }
       }
   }
-  var commentInput =document.getElementById('comment')
-  var name = commentInput.value;
+  var nameInput =document.getElementById('name')
+  var name = nameInput.value;
   request.open('GET','http;//http://dominickingston2003.imad.hasura-app.io/submit-name?name=' + name,true);
   request.send(null);
 };
