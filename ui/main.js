@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var commentInput =document.getElementById('comment')
-var name = commentInput.value
+var name = commentInput.value;
 var submit = document.getElementById('submit_btn')
 submit.onclick = function() {
   var request = new XMLHttpRequest();
